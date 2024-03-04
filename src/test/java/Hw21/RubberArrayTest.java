@@ -15,10 +15,10 @@ public class RubberArrayTest {
     private RubberArray rubberArray;
 
     @BeforeEach
-    public void init(){
-       rubberArray=new RubberArray();
+    public void init() {
+        rubberArray = new RubberArray();
         rubberArray.add(9);
-       rubberArray.add(5);
+        rubberArray.add(5);
         rubberArray.add(7);
     }
 
@@ -31,27 +31,30 @@ public class RubberArrayTest {
         String actual = strSb.toString();
         Assertions.assertEquals(expected, actual);
     }
+
     //Task2
     @Test
-    public void containsTest(){
-        int  expected=9;
-        boolean actuale =rubberArray.contains(expected);
+    public void containsTest() {
+        int expected = 9;
+        boolean actuale = rubberArray.contains(expected);
         Assertions.assertTrue(actuale);
     }
+
     //Task3
     @Test
-    public void indexOfTest(){
-        int  expected=0;
-        int actual=rubberArray.indexOf(9);
-        Assertions.assertEquals(expected,actual);
+    public void indexOfTest() {
+        int expected = 0;
+        int actual = rubberArray.indexOf(9);
+        Assertions.assertEquals(expected, actual);
     }
+
     //Task4
     @Test
-    public void addTest(){
-        int value=1;
-        int index=2;
-        rubberArray.add(1,2);
-        Assertions.assertEquals(value,rubberArray.get(index));
-        Assertions.assertEquals(9,rubberArray.toString().length());
+    public void addTest() {
+        int value = 1;
+        int index = 2;
+        rubberArray.add(1, 2);
+        Assertions.assertEquals(value, rubberArray.get(index));
+        Assertions.assertEquals(9, rubberArray.toString().length());
     }
 }
