@@ -12,11 +12,15 @@ public class RubberArray {
 
     private int[] data;
 
-    private int length;
+    public int length;
 
     public RubberArray() {
         data = new int[INIT_DATA_SIZE];
         length = 0;
+    }
+
+    public int sise(){
+        return length;
     }
 
     public int get(int idx) {

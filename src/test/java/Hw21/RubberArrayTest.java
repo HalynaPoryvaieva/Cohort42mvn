@@ -1,4 +1,4 @@
-package lesson21;
+package Hw21;
 
 import lesson21.hm21.RubberArray;
 import org.junit.jupiter.api.Assertions;
@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
  */
 public class RubberArrayTest {
 
-    public RubberArray rubberArray;
+    private RubberArray rubberArray;
 
     @BeforeEach
     public void init(){
